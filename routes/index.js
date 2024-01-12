@@ -29,7 +29,6 @@ router.post('/url', async (req, res) => {
 
 router.get('/:shortId([a-zA-Z0-9]+)', async (req, res) => {
   const shortId = req.params.shortId;
-  console.log(shortId);
   try {
       const entry = await urlModel.findOneAndUpdate(
           { shortId },

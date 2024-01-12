@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // mongodb connection
-mongoose.connect("mongodb+srv://jayp:2012@cluster0.ozimw5y.mongodb.net/urldb");
+mongoose.connect("mongodb://localhost:27017/urldb");
 
 // Define the url schema
 const urlSchema = new Schema({
