@@ -2,9 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // mongodb connection
-// mongoose.connect("mongodb+srv://jayp:2012@cluster0.ozimw5y.mongodb.net/urldb");
-mongoose.connect(process.env.MONGO_URL);
-
+mongoose.connect("mongodb+srv://jayp:2012@cluster0.ozimw5y.mongodb.net/urldb");
 
 // Define the url schema
 const urlSchema = new Schema({

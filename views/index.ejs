@@ -56,9 +56,9 @@
         const shortId = data.id;
 
         // Display the shortID
-        document.getElementById('shortId').innerText = "http://localhost:3000/"+shortId;
+        document.getElementById('shortId').innerText = window.location.href+shortId;
         document.getElementById('shortIdDisplay').style.display = 'block';
-        document.getElementById('shortId').setAttribute('href',"http://localhost:3000/"+shortId);
+        document.getElementById('shortId').setAttribute('href',window.location.hrefc+shortId);
       } else {
         // Handle error appropriately
         console.error('Error:', response.statusText);
